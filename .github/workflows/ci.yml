@@ -20,8 +20,9 @@ jobs:
       run: echo hallo world
 
     - name: Run a multi line script
-      run: echo hallo world - second line 
-      run: echo hallo world - third line
+      run: 
+        echo hallo world - second line 
+        echo hallo world - third line
      
 
 
