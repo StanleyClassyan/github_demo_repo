@@ -2,10 +2,7 @@ name: CI
 
 on:
   push:
-    branches:
-    - main
-    - test_pr_template
-    - my_new_branch
+    branches: [ branch2 ]
 
 jobs:
   my_job:
@@ -23,6 +20,7 @@ jobs:
       run: 
         echo hallo world - second line 
         echo hallo world - third line
+        echo hallo world - fourth line
      
 
 
