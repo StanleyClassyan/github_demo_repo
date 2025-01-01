@@ -17,11 +17,11 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Run a one line script
-    - run: echo hallo world
+      run: echo hallo world
 
     - name: Run a multi line script
-    - run: echo hallo world - second line 
-    - run: echo hallo world - third line
+      run: echo hallo world - second line 
+      run: echo hallo world - third line
      
 
 
