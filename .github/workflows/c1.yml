@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [ branch3 ]
+
+jobs:
+  my_job:
+    name: deploy to staging
+    runs-on: ubuntu-22.04
+
+    steps: 
+
+    - uses: actions/checkout@v2
+
+    - name: Run a one line script
+      run: echo hallo world
+
+    - name: Run a multi line script
+      run: 
+        echo hallo world - second line 
+        echo hallo world - third line
+        echo hallo world - fourth line
+        echo hallo world - fifth line
+    
+
+    
+
+    
