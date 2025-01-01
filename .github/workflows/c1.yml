@@ -1,1 +1,33 @@
+name: CI
 
+on:
+  push:
+    branches:
+    - main
+    - test_pr_template
+    - my_new_branch
+
+jobs:
+  my_job:
+    name: deploy to staging
+    runs-on: ubuntu-22.04
+
+    steps: 
+
+    - uses: actions/checkout@v2
+
+    - name: Run a one line script
+      run: echo hallo world
+
+    - name: Run a multi line script
+      run: 
+        echo hallo world - second line 
+        echo hallo world - third line
+     
+
+
+    
+
+    
+
+    
