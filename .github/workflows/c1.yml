@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ branch2 ]
+    branches: [ branch3 ]
 
 jobs:
   my_job:
@@ -21,8 +21,8 @@ jobs:
         echo hallo world - second line 
         echo hallo world - third line
         echo hallo world - fourth line
-     :q
-    -
+        echo hallo world - fifth line
+
 
 
     
