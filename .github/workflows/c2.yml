@@ -5,8 +5,7 @@ on:
     branches: [ branch3 ]
 
 jobs:
-  my_job:
-    name: Checking Custom Env Variables
+  display:
     runs-on: ubuntu-22.04
 
     env: 
