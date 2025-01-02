@@ -2,11 +2,10 @@ name: CI
 
 on:
   push:
-    branches: [ branch3 ]
+    branches: [ branch4 ]
 
 jobs:
-  my_job:
-    name: deploy to staging
+  build:
     runs-on: ubuntu-22.04
 
     steps: 
@@ -26,6 +25,13 @@ jobs:
 
     - name: List all new files
       run: ls
+
+  display:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Print text
+        run: echo hallo from another job
     
 
     
