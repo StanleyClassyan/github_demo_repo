@@ -12,8 +12,7 @@ jobs:
       region: Central
       profile_path: profile/
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
+    
       - name: Display custom environment variables
         run: |
           echo "The platform is ${{ env.platform }}"
@@ -23,6 +22,7 @@ jobs:
           else
             echo "The platform is not Azure."
           fi
+          
       - name: Display GH default env variables
         run: |  
           echo "Github actor: $GITHUB_ACTOR"
