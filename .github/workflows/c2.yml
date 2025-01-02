@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [ branch3 ]
+
+jobs:
+  my_job:
+    name: Checking Custom Env Variables
+    runs-on: ubuntu-22.04
+    env: 
+      plateform: Azure
+      region: Central
+      profile_path: profile/
+
+    steps: 
+    - name: Display custom environment variables
+      if: ${{ env.plateform == 'Azure' }}
+      run: 
+        echo "The plateform is ${{ env.plateform }}"
+        echo "The region is $region"
+        
+  
