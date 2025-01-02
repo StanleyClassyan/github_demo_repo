@@ -6,7 +6,7 @@ on:
 
 jobs:
   my_job:
-    name: deploy to staging
+    name: Checking Custom Env Variables
     runs-on: ubuntu-22.04
     env: 
       plateform: Azure
