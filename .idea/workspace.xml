@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23e6d6a3-9195-40c9-8de1-24e001e1e905" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/c1.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/c1.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/c2.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging branch4",
+    "git-widget-placeholder": "branch4",
     "last_opened_file_path": "G:/My Drive/Professional/Practice/my_git/github_demo_repo"
   }
 }]]></component>
