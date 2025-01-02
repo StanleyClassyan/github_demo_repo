@@ -1,33 +1,25 @@
 name: CI
-
 on:
   push:
-    branches: [ branch3 ]
-
+    branches:
+      - branch3
 jobs:
   my_job:
-    name: deploy to staging
+    name: Checking Custom Env Variables
     runs-on: ubuntu-22.04
-
-    steps: 
-
-    - uses: actions/checkout@v2
-
-    - name: List all original files
-      run: ls
-      
-    - name: Install pyhton
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.13' 
-
-    - name: Run python script
-      run: python create_file.py
-
-    - name: List all new files
-      run: ls
-    
-
-    
-
-    
+    env:
+      platform: Azure
+      region: Central
+      profile_path: profile/
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Display custom environment variables
+        run: |
+          echo "The platform is ${{ env.platform }}"
+          echo "The region is ${{ env.region }}"
+          if [ "${{ env.platform }}" = "Azure" ]; then
+            echo "The platform is Azure. Proceeding with further steps."
+          else
+            echo "The platform is not Azure."
+          fi
