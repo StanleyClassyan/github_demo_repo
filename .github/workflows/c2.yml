@@ -11,6 +11,7 @@ jobs:
       platform: Azure
       region: Central
       profile_path: profile/
+      
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
