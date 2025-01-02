@@ -1,8 +1,8 @@
 name: CI
-'on':
+on:
   push:
-    branches:
-      - branch3
+    branches: [ branch3 ]
+    
 jobs:
   my_job:
     name: Checking Custom Env Variables
