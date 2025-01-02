@@ -13,6 +13,7 @@ jobs:
       region: Central
       profile_path: profile/
 
+
     steps: 
     - name: Display custom environment variables
       if: ${{ env.plateform == 'Azure' }}
