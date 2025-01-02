@@ -23,3 +23,7 @@ jobs:
           else
             echo "The platform is not Azure."
           fi
+      - name: Display GH default env variables
+        run: |  
+          echo "Github actor: $GITHUB_ACTOR"
+          echo "Github actor: $GITHUB_REF"
