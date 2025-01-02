@@ -17,7 +17,7 @@ jobs:
       - name: Display custom environment variables
         run: |
           echo "The platform is ${{ env.platform }}"
-          echo "The region is ${{ env.region }}"
+          echo "The region is $region
           if [ "${{ env.platform }}" = "Azure" ]; then
             echo "The platform is Azure. Proceeding with further steps."
           else
