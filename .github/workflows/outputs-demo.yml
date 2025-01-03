@@ -13,15 +13,17 @@ jobs:
 
     steps:
       - id: step1
-        run: echo "test=hello" >> "$GITHUB_OUTPUT"
+        run: echo "test=hello" >> $GITHUB_ENV
         env:
           test: hello
+
       - id: step2
-        run: echo "test=world" >> "$GITHUB_OUTPUT"
+        run: echo "test=world" >> $GITHUB_ENV
         env:
           test: world
+
       - id: step3
-        run: echo "test=hi" >> "$GITHUB_OUTPUT"
+        run: echo "test=hi" >> $GITHUB_ENV
         env:
           test: hi
 
