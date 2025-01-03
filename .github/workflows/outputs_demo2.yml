@@ -26,6 +26,14 @@ jobs:
           ls -la
           python create_txt_file.py
           ls -la
+          
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'StanleyClassyan'
+          git config --global user.email 'stanleyapclassyan@gmail.com'
+          git add readme.txt
+          git commit -m "Add readme.txt"
+          git push
 
   job2:
     runs-on: ubuntu-latest
