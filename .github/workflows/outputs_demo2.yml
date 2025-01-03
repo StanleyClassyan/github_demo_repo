@@ -5,6 +5,8 @@ on:
 jobs:
   job1:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     # Map step outputs to job outputs
     outputs:
       output1: ${{ steps.step1.outputs.data }}
