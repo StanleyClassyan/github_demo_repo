@@ -15,10 +15,18 @@ jobs:
     steps:
       - id: step1
         run: echo "test=hello" >> "$GITHUB_OUTPUT"
+        env:
+          test: hello
+
       - id: step2
         run: echo "test=world" >> "$GITHUB_OUTPUT"
+        env:
+          test: world
+
       - id: step3
         run: echo "test=hi" >> "$GITHUB_OUTPUT"
+        env:
+          test: hi
         
   job2:
     runs-on: ubuntu-latest
