@@ -22,7 +22,10 @@ jobs:
       - name: Run python script
         id: contents
         run: 
+          pwd
+          ls -la
           python create_txt_file.py
+          ls -la
           contents=$( cat readme.txt )
           echo "data=$contents" >> $GITHUB_OUTPUT
 
