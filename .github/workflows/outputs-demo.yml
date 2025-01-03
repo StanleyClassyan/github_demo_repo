@@ -13,15 +13,15 @@ jobs:
       
     steps:
       - id: step1
-          test="hello"
-        run: echo test
+        run: echo "test=hello" >> "$GITHUB_OUTPUT"
+
       - id: step2
-          test="world"
-        run: echo test
+        run: echo "test=world" >> "$GITHUB_OUTPUT"
+
       - id: step3
         run: |
           var="test12345678"
-          echo "test=$var"
+          echo "test=$var" >> "$GITHUB_OUTPUT"
         
   job2:
     runs-on: ubuntu-latest
