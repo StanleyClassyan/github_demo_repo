@@ -26,8 +26,6 @@ jobs:
           ls -la
           python create_txt_file.py
           ls -la
-          contents=$( cat readme.txt )
-          echo "data=$contents" >> $GITHUB_OUTPUT
 
   job2:
     runs-on: ubuntu-latest
