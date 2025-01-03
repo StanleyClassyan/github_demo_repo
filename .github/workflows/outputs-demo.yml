@@ -23,7 +23,8 @@ jobs:
       - id: step3
         run: |
           echo "test=hi" >> $GITHUB_OUTPUT
-          echo "Setting output3 to hi"
+          var=hi
+          echo "Setting output3 to $var"
 
   job2:
     runs-on: ubuntu-latest
