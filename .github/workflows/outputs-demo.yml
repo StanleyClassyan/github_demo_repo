@@ -13,11 +13,13 @@ jobs:
       
     steps:
       - id: step1
-        run: echo "test=hello" >> "$GITHUB_OUTPUT"
+        run: echo "::set-output name=test::hello"
       - id: step2
-        run: echo "test=world" >> "$GITHUB_OUTPUT"
+        run: echo "::set-output name=test::world"
       - id: step3
-        run: echo "test=Wow" >> "$GITHUB_OUTPUT"
+        run: 
+          var=abc1234
+          echo "::set-output name=test::$var"
         
   job2:
     runs-on: ubuntu-latest
