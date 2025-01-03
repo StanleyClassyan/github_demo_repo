@@ -22,7 +22,7 @@ jobs:
       - name: Run python script
         id: contents
         run: 
-          python create_text_file.py
+          python create_txt_file.py
           contents=$( cat readme.txt )
           echo "data=$contents" >> $GITHUB_OUTPUT
 
