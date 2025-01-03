@@ -17,8 +17,8 @@ jobs:
       - id: step2
         run: echo "test=world" >> "$GITHUB_OUTPUT"
       - id: step3
-        run: 
           var = "test12345678"
+        run: 
           echo "test=$var" >> "$GITHUB_OUTPUT"
         
   job2:
