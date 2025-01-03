@@ -14,14 +14,14 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v2
 
-      - name: Install pyhton
+      - name: Install python
         uses: actions/setup-python@v5
         with:
           python-version: '3.13' 
     
       - name: Run python script
         id: contents
-        run: 
+        run: |
           pwd
           ls -la
           python create_txt_file.py
