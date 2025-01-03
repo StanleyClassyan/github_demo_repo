@@ -5,7 +5,7 @@ on:
 jobs:
   job1:
     runs-on: ubuntu-latest
-    # Map a step output to a job output
+    # Map step outputs to job outputs
     outputs:
       output1: ${{ steps.step1.outputs.test }}
       output2: ${{ steps.step2.outputs.test }}
@@ -13,17 +13,17 @@ jobs:
 
     steps:
       - id: step1
-        run: echo "test=hello" >> $GITHUB_ENV
+        run: echo "test=hello" >> $GITHUB_OUTPUT
         env:
           test: hello
 
       - id: step2
-        run: echo "test=world" >> $GITHUB_ENV
+        run: echo "test=world" >> $GITHUB_OUTPUT
         env:
           test: world
 
       - id: step3
-        run: echo "test=hi" >> $GITHUB_ENV
+        run: echo "test=hi" >> $GITHUB_OUTPUT
         env:
           test: hi
 
