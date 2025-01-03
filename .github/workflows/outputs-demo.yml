@@ -13,9 +13,11 @@ jobs:
       
     steps:
       - id: step1
-        run: echo test="hello"
+          test="hello"
+        run: echo test
       - id: step2
-        run: echo test="world"
+          test="world"
+        run: echo test
       - id: step3
         run: |
           var="test12345678"
