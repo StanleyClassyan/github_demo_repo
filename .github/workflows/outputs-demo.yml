@@ -14,14 +14,20 @@ jobs:
     steps:
       - id: step1
         run: echo "test=hello" >> "$GITHUB_OUTPUT"
+        env:
+          test: hello
 
       - id: step2
         run: echo "test=world" >> "$GITHUB_OUTPUT"
+        env:
+          test: world
 
       - id: step3
         run: |
           var="test12345678"
           echo "test=$var" >> "$GITHUB_OUTPUT"
+        env:
+          test: test12345678
         
   job2:
     runs-on: ubuntu-latest
